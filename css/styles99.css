@@ -1,0 +1,31 @@
+Style for the sidebar
+.sidebar {
+    height: 100%; /* Full-height: covers the entire page */
+    width: 250px; /* Sidebar width */
+    position: fixed; /* Fixed sidebar */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Dark background */
+    padding-top: 20px; /* Padding for content */
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 15px 20px; /* Padding for links */
+    text-decoration: none;
+    font-size: 18px;
+    color: white; /* Text color */
+    display: block; /* Make the links appear below each other */
+}
+
+/* Change link color on hover */
+.sidebar a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+/* Main content */
+.content {
+    margin-left: 260px; /* Adjust margin to leave space for the sidebar */
+    padding: 20px; /* Padding inside the main content */
+}
