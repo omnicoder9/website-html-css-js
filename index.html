@@ -5,7 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML5 Boilerplate</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    #progress-container {
+        width: 100%;
+        margin: 20px 0;
+    }
+</style>
 </head>
 
 
@@ -30,13 +39,41 @@
     <!-- Main Content -->
      <p> a website destroyed</p>
      <a href="https://dev.to/iamcymentho/dynamic-content-loading-with-javascript-15hh">Dynamic Content Loading with JavaScript by Odumosu Matthew on dev.to</a>
+     <h1>File Upload Progress</h1>
+    <label for="file-upload">Uploading:</label>
+    <!-- The progress element -->
+    <progress id="file-upload" value="40" max="100"></progress>
+    <p>40% completed</p>
+
+    <h2>Task Completion</h2>
+    <progress value="75" max="100"></progress>
+    <p>75% of tasks are done</p>
+
+    <h2>Indeterminate Progress</h2>
+    <!-- Indeterminate state -->
+    <progress></progress>
+
+    <h1>Dynamic Progress Bar Example</h1>
+
+    <div id="progress-container">
+        <progress id="dynamic-progress" value="0" max="100"></progress>
+        <p id="progress-text">0% completed</p>
+    </div>
+
+    <button id="start-progress">Start Progress</button>
 
     <div id="sidebar-container"></div>
 <div class="content">
     <h1>AJAX content loading</h1>
         <p>Click on the links to load content dynamically.</p>
 </div>
-<script src="js/script.js"></script>
+<div>
+    <p> JS script won't load/execute.  https://stackoverflow.com/questions/36021732/javascript-file-wont-execute-run</p>
+</div>
+<p>Placing the script before the closing body tag ensures it runs after the DOM is loaded</p>
+<script src="js/aa.js">
+</script>
+<!-- <script src="js/script.js"></script> -->
 <!-- <script>
     console.log("hello world")
     fetch('sidebar.html')
